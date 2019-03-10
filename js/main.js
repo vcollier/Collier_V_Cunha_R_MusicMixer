@@ -54,80 +54,80 @@
 		
 		});
 
-		//dropZone2.addEventListener("dragover", function(e) {
-			//e.preventDefault();
-			//console.log('dragged over me!');
+		dropZone2.addEventListener("dragover", function(e) {
+			e.preventDefault();
+			console.log('dragged over me!');
 
-		//});
+		});
 
-		//dropZone2.addEventListener("drop", function(e) {
-			//e.preventDefault();
-			//console.log('you dropped somethin on me');
+		dropZone2.addEventListener("drop", function(e) {
+			e.preventDefault();
+			console.log('you dropped somethin on me');
 
-			//let item = e.dataTransfer.getData("text/plain");
-			//e.target.appendChild(document.querySelector(".icons"));
+			let item = e.dataTransfer.getData("text/plain");
+			e.target.appendChild(document.querySelector(".icons"));
 		
-		//});
+		});
 
-		//dropZone3.addEventListener("dragover", function(e) {
-			//e.preventDefault();
-			//console.log('dragged over me!');
+		dropZone3.addEventListener("dragover", function(e) {
+			e.preventDefault();
+			console.log('dragged over me!');
 
-		//});
+		});
 
-		//dropZone3.addEventListener("drop", function(e) {
-			//e.preventDefault();
-			//console.log('you dropped somethin on me');
+		dropZone3.addEventListener("drop", function(e) {
+			e.preventDefault();
+			console.log('you dropped somethin on me');
 
-			//let item = e.dataTransfer.getData("text/plain");
-			//e.target.appendChild(document.querySelector(".icons"));
+			let item = e.dataTransfer.getData("text/plain");
+			e.target.appendChild(document.querySelector(".icons"));
 		
-		//});
+		});
 
-		//dropZone4.addEventListener("dragover", function(e) {
-			//e.preventDefault();
-			//console.log('dragged over me!');
+		dropZone4.addEventListener("dragover", function(e) {
+			e.preventDefault();
+			console.log('dragged over me!');
 
-		//});
+		});
 
-		//dropZone4.addEventListener("drop", function(e) {
-			//e.preventDefault();
-			//console.log('you dropped somethin on me');
+		dropZone4.addEventListener("drop", function(e) {
+			e.preventDefault();
+			console.log('you dropped somethin on me');
 
-			//let item = e.dataTransfer.getData("text/plain");
-			//e.target.appendChild(document.querySelector(".icons"));
+			let item = e.dataTransfer.getData("text/plain");
+			e.target.appendChild(document.querySelector(".icons"));
 		
-		//});
+		});
 
-		//dropZone5.addEventListener("dragover", function(e) {
-			//e.preventDefault();
-			//console.log('dragged over me!');
+		dropZone5.addEventListener("dragover", function(e) {
+			e.preventDefault();
+			console.log('dragged over me!');
 
-		//});
+		});
 
-		//dropZone5.addEventListener("drop", function(e) {
-			//e.preventDefault();
-			//console.log('you dropped somethin on me');
+		dropZone5.addEventListener("drop", function(e) {
+			e.preventDefault();
+			console.log('you dropped somethin on me');
 
-			//let item = e.dataTransfer.getData("text/plain");
-			//e.target.appendChild(document.querySelector(".icons"));
+			let item = e.dataTransfer.getData("text/plain");
+			e.target.appendChild(document.querySelector(".icons"));
 		
-		//});
+		});
 
-		//dropZone6.addEventListener("dragover", function(e) {
-			//e.preventDefault();
-			//console.log('dragged over me!');
+		dropZone6.addEventListener("dragover", function(e) {
+			e.preventDefault();
+			console.log('dragged over me!');
 
-		//});
+		});
 
-		//dropZone6.addEventListener("drop", function(e) {
-			//e.preventDefault();
-			//console.log('you dropped somethin on me');
+		dropZone6.addEventListener("drop", function(e) {
+			e.preventDefault();
+			console.log('you dropped somethin on me');
 
-			//let item = e.dataTransfer.getData("text/plain");
-			//e.target.appendChild(document.querySelector(".icons"));
+			let item = e.dataTransfer.getData("text/plain");
+			e.target.appendChild(document.querySelector(".icons"));
 		
-		//});
+		});
 
 
 
