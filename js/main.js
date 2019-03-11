@@ -1,30 +1,33 @@
 (() => {
-	console.log('fired');
+	
+		console.log('fired');
 
-	let cat = document.querySelector(".allCat");
+		let cat = document.querySelector(".allCat");
 
-	let dropZone1 = document.querySelector("#man1");
+		let dropZone = document.querySelectorAll(".drop-zone");
 
-	let dropZone2 = document.querySelector("#man2");
+		let aud       = document.querySelector('audio');
 
-	let dropZone3 = document.querySelector("#man3");
+		let tracks    = document.querySelectorAll('.trackholder');
 
-	let dropZone4 = document.querySelector("#man4");
-
-	let dropZone5 = document.querySelector("#man5");
-
-	let dropZone6 = document.querySelector("#man6");
+		let beats 	  = document.querySelectorAll(".beats");
 
 
-
-	initDrag();
 
 	function playAudio() {
 		aud.play();
 	}
 
+	function newTrack(e) {
+		currentTrack = this.dataset.currenttrack;
+
+		aud.src = `audio/${currentTrack}`;
+		aud.load();
+		aud.play();
+	}
 
 
+	initDrag();
 	
 	//drag
 	function initDrag() {
@@ -32,6 +35,8 @@
 			img.addEventListener("dragstart", function(e) {
 				console.log('draggin...');
 				e.dataTransfer.setData("text/plain", this.id);
+				console.log(this.id);
+		
 			});
 
 		});
@@ -39,95 +44,28 @@
 
 
 	//drop
-		dropZone1.addEventListener("dragover", function(e) {
+	dropZone.forEach(zone => {
+		zone.addEventListener("dragover", function(e) {
 			e.preventDefault();
 			console.log('dragged over me!');
 
 		});
 
-		dropZone1.addEventListener("drop", function(e) {
+		zone.addEventListener("drop", function(e) {
 			e.preventDefault();
 			console.log('you dropped somethin on me');
 
 			let item = e.dataTransfer.getData("text/plain");
+			
 			e.target.appendChild(document.querySelectorAll("img"));
 		
-		});
+		})
+	});
 
-		dropZone2.addEventListener("dragover", function(e) {
-			e.preventDefault();
-			console.log('dragged over me!');
+		tracks.forEach(track => {
+		track.addEventListener('drop', newTrack);
 
-		});
-
-		dropZone2.addEventListener("drop", function(e) {
-			e.preventDefault();
-			console.log('you dropped somethin on me');
-
-			let item = e.dataTransfer.getData("text/plain");
-			e.target.appendChild(document.querySelector(".icons"));
-		
-		});
-
-		dropZone3.addEventListener("dragover", function(e) {
-			e.preventDefault();
-			console.log('dragged over me!');
-
-		});
-
-		dropZone3.addEventListener("drop", function(e) {
-			e.preventDefault();
-			console.log('you dropped somethin on me');
-
-			let item = e.dataTransfer.getData("text/plain");
-			e.target.appendChild(document.querySelector(".icons"));
-		
-		});
-
-		dropZone4.addEventListener("dragover", function(e) {
-			e.preventDefault();
-			console.log('dragged over me!');
-
-		});
-
-		dropZone4.addEventListener("drop", function(e) {
-			e.preventDefault();
-			console.log('you dropped somethin on me');
-
-			let item = e.dataTransfer.getData("text/plain");
-			e.target.appendChild(document.querySelector(".icons"));
-		
-		});
-
-		dropZone5.addEventListener("dragover", function(e) {
-			e.preventDefault();
-			console.log('dragged over me!');
-
-		});
-
-		dropZone5.addEventListener("drop", function(e) {
-			e.preventDefault();
-			console.log('you dropped somethin on me');
-
-			let item = e.dataTransfer.getData("text/plain");
-			e.target.appendChild(document.querySelector(".icons"));
-		
-		});
-
-		dropZone6.addEventListener("dragover", function(e) {
-			e.preventDefault();
-			console.log('dragged over me!');
-
-		});
-
-		dropZone6.addEventListener("drop", function(e) {
-			e.preventDefault();
-			console.log('you dropped somethin on me');
-
-			let item = e.dataTransfer.getData("text/plain");
-			e.target.appendChild(document.querySelector(".icons"));
-		
-		});
+	})
 
 
 
