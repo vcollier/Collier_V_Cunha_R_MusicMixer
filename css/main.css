@@ -167,17 +167,27 @@ h2, h3
 {
 	height: 70px;
 	margin-top: 8px;
+	background-color: yellow;
 }
 
 .icons2
 {
 	height: 70px;
 	margin-top: 8px;
+	background-color: green;
 }
 .icons3
 {
 	height: 70px;
 	margin-top: 8px;
+	background-color: pink;
+}
+
+.icons4
+{
+	height: 70px;
+	margin-top: 8px;
+	background-color: blue;
 }
 
 #cat1
