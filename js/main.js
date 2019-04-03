@@ -22,9 +22,6 @@
 		});
 	}
 
-
-
-
 	dropZone.forEach(zone => {
 		zone.addEventListener("dragover", function(e) {
 			e.preventDefault();
@@ -40,9 +37,13 @@
 			let newAudioTrack = document.createElement("audio");
 			newAudioTrack.src = `audio/${source}`;
 
+
 			document.body.appendChild(newAudioTrack);
 			newAudioTrack.load();
+			newAudioTrack.loop = true;
 			newAudioTrack.play();
+
+
 		});
 	});
 
