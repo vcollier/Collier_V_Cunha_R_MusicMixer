@@ -121,7 +121,7 @@ h2, h3
 	flex-direction: row;
 	width: 1000px;
 	margin-left: 170px;
-	margin-top: 207px;
+	margin-top: 25px;
 	animation: removeImage;
 }
 
@@ -157,6 +157,34 @@ h2, h3
 
 } 
 
+@keyframes speakerOn
+{
+	to { transform: scale(1.4); }
+
+
+}
+
+.speakers
+{
+	padding: 30px;
+}
+
+#speaker1
+{
+	width: 10%;
+	margin-top: -110px;
+	margin-bottom: 50px;
+	animation: speakerOn;
+}
+
+#speaker2
+{
+	width: 10%;
+	display: block;
+	margin-left: auto;
+	margin-top: -210px;
+
+}
 
 #items
 {
@@ -197,8 +225,14 @@ h2, h3
 
 #restart
 {
+	display: block;
+	margin: 0 auto;
+	margin-top: 70px;
 	background-color: black;
 	color: #fff;
+	font-size: 20px;
+	width: 180px;
+	height: 60px;
 }
 
 @keyframes iconAnimate {
@@ -209,7 +243,7 @@ h2, h3
 }
 
 .animateIcon {
-	background: url(../images/man-dance.svg);
+	content: url(../images/man-dance.svg);
     animation: iconAnimate 3s ease-in infinite;
 }
 

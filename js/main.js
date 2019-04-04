@@ -9,6 +9,7 @@
 
 	
 	initDrag();
+
 	
 	//drag
 	function initDrag() {
@@ -40,13 +41,20 @@
 			let newAudioTrack = document.createElement("audio");
 			newAudioTrack.src = `audio/${source}`;
 
+			function pauseAudio() {
+			location.reload();
+			}
 
 			document.body.appendChild(newAudioTrack);
 			newAudioTrack.load();
 			newAudioTrack.loop = true;
 			newAudioTrack.play();
 
+			let button = document.getElementById('restart');
+			button.addEventListener("click", pauseAudio);
+
 			this.firstChild.classList.add('animateIcon');
+			this.firstChild.classList.add('speakerOn');
 
 
 			});
