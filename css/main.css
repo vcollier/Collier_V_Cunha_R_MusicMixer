@@ -36,7 +36,7 @@ h2, h3
 	margin-left: -1550px;
 }
 
-#container button
+#container a
 {
 	background-color: #266c6a;
 	height: 70px;
@@ -114,16 +114,6 @@ h2, h3
 	font-size: 30px;
 }
 
-#dropArea
-{
-	height: 500px;
-	width: 1000px;
-	margin-left: 200px;
-	margin-top: 50px;
-	background-color: #c5c5c5;
-	border: 5px solid #5c5c5c;
-
-}
 
 #people
 {
@@ -131,8 +121,22 @@ h2, h3
 	flex-direction: row;
 	width: 1000px;
 	margin-left: 170px;
-	margin-top: -95px;
+	margin-top: 207px;
+	animation: removeImage;
 }
+
+
+#animation
+{
+	display: flex;
+	flex-direction: row;
+	width: 1000px;
+	margin-left: 170px;
+	margin-top: -305px;
+}
+
+
+
 
 .drop-zone img
 {
@@ -153,11 +157,12 @@ h2, h3
 
 } 
 
+
 #items
 {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	height: 200px;
 	width: 1000px;
 	margin-top: 30px;
@@ -167,59 +172,78 @@ h2, h3
 {
 	height: 70px;
 	margin-top: 8px;
+	background-color: yellow;
 }
 
 .icons2
 {
 	height: 70px;
 	margin-top: 8px;
+	background-color: green;
 }
 .icons3
 {
 	height: 70px;
 	margin-top: 8px;
+	background-color: pink;
 }
 
-#cat1
+.icons4
 {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 80px;
-	width: 240px;
-	background-color: #7184c2;
+	height: 70px;
+	margin-top: 8px;
+	background-color: blue;
 }
 
-#cat2
+#restart
 {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 80px;
-	width: 240px;
-	background-color: #d6d37d;
+	background-color: black;
+	color: #fff;
+}
+
+@keyframes iconAnimate {
+    /*0% {transform: rotate(0deg)}
+    25% {transform: rotate(10deg)}
+    75% {transform: rotate(-10deg)}
+    100% {transform: rotate(0deg)}*/
+}
+
+.animateIcon {
+	background: url(../images/man-dance.svg);
+    animation: iconAnimate 3s ease-in infinite;
 }
 
 
-#cat3
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 80px;
-	width: 240px;
-	background-color: #ac70c0;
+#dropArea {
+	height: 500px;
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #c5c5c5;
+	border: 5px solid #5c5c5c;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
 }
 
-#cat4
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 80px;
-	width: 240px;
-	background-color: #b75050;
-}
+/*(@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}*/
+
+
+
+
+
+
 
 
 

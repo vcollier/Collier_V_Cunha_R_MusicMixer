@@ -4,6 +4,7 @@
 
 		let cat = document.querySelector(".allCat");
 		let dropZone = document.querySelectorAll(".drop-zone");
+		let men = document.querySelectorAll(".men");
 		let tracks    = document.querySelectorAll('.trackholder');
 
 	
@@ -32,6 +33,8 @@
 			e.preventDefault();
 			console.log('you dropped somethin on me');
 
+			zone.src = "images/man-dance.svg";
+
 			let source = e.dataTransfer.getData("text/plain");
 
 			let newAudioTrack = document.createElement("audio");
@@ -43,9 +46,12 @@
 			newAudioTrack.loop = true;
 			newAudioTrack.play();
 
+			this.firstChild.classList.add('animateIcon');
+
+
+			});
 
 		});
-	});
 
 
 
