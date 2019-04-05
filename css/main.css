@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/*CSS Doc*/
+
+body 
+{ 
+background-image:url(../images/grungeBG.jpg);
+background-repeat:no-repeat; 
+background-color:#000000; 
+background-size: ;
+}
+
+body
+{
+font-family: 'Bungee Shade', cursive;
+size: 30px;
+background-color: #000;
+/*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='46' viewBox='0 0 70 46'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.7'%3E%3Cpolygon points='68 44 62 44 62 46 56 46 56 44 52 44 52 46 46 46 46 44 40 44 40 46 38 46 38 44 32 44 32 46 26 46 26 44 22 44 22 46 16 46 16 44 12 44 12 46 6 46 6 44 0 44 0 42 8 42 8 28 6 28 6 0 12 0 12 28 10 28 10 42 18 42 18 28 16 28 16 0 22 0 22 28 20 28 20 42 28 42 28 28 26 28 26 0 32 0 32 28 30 28 30 42 38 42 38 0 40 0 40 42 48 42 48 28 46 28 46 0 52 0 52 28 50 28 50 42 58 42 58 28 56 28 56 0 62 0 62 28 60 28 60 42 68 42 68 0 70 0 70 46 68 46'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");*/
+}
+
+h2, h3
+{
+font-family: Helvetica, Arial, sans-serif;
+color: #fff;
+}
+
+#creativity
+{
+width: 430px;
+font-family: 'Press Start 2P', cursive;
+font-size: 60px;
+margin-top: -450px;
+letter-spacing: 15px;
+line-height: 90px;
+}
+
+#container
+{
+width: 95%;
+margin: 0 auto;
+}
+
+#container button
+{
+	border: none;
+}
+
+#container button:hover
+{
+	background-color: #858585;
+}
+
+#container a
+{
+display: block;
+margin: 0 auto;
+color: #fff;
+background-color: orange;
+padding: 20px;
+width: 150px;
+font-size: 17px;
+font-family: Helvetica, Arial, sans-serif;
+text-align: center;
+margin-top: 60px;
+letter-spacing: 1px;
+text-decoration: none;
+border-radius: 20px;
+}
+
+#container a:hover
+{
+background-color: #474747;
+animation: 1.0s ease;
+}
+
+#container h3
+{
+margin-top: 75px;
+font-size: 40px;
+text-align: center;
+letter-spacing: 3px;
+margin-bottom: 30px;
+}
+
+#hero
+{
+display: block;
+width: 100%;
+margin: 0 auto;
+
+padding-right: 200px;
+}
+
+
+#hiphop img
+{
+	display: block;
+	width: 1400px;
+}
+
+
+#title
+{
+	text-align: center;
+	color: #fff;
+	padding-top: 60px;
+	font-size: 50px;
+}
+
+#people
+{
+	display: flex;
+	flex-direction: row;
+	width: 1000px;
+	margin-left: 170px;
+	margin-top: 25px;
+	animation: removeImage;
+}
+
+
+#animation
+{
+	display: flex;
+	flex-direction: row;
+	width: 1000px;
+	margin-left: 170px;
+	margin-top: -305px;
+}
+
+
+
+
+.drop-zone img
+{
+	width: 85%;
+	margin-left: -170px;
+	padding: 10px;
+}
+
+.drop-zone
+{
+	width: 300px;
+}
+
+#background
+{
+	height: 500px;
+	margin-bottom: -200px;
+
+} 
+
+
+.speakers
+{
+	padding: 30px;
+}
+
+#speaker1
+{
+	width: 10%;
+	margin-top: -110px;
+	margin-bottom: 50px;
+	animation: speakerOn 1s infinite;
+}
+
+#speaker2
+{
+	width: 10%;
+	display: block;
+	margin-left: auto;
+	margin-top: -210px;
+	animation: speakerOn 1s infinite;
+}
+
+@keyframes speakerOn
+{
+	5% { transform: scale(1.4); }
+	25% { transform: scale(2); }
+	50% { transform: scale(1.4); }
+	75% { transform: scale(2); }
+	100% { transform: scale(1.4); }
+
+
+}
+
+
+#items
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 200px;
+	width: 1000px;
+	margin-top: 30px;
+}
+
+.icons
+{
+	height: 70px;
+	margin-top: 8px;
+	background-color: yellow;
+}
+
+.icons2
+{
+	height: 70px;
+	margin-top: 8px;
+	background-color: green;
+}
+.icons3
+{
+	height: 70px;
+	margin-top: 8px;
+	background-color: pink;
+}
+
+.icons4
+{
+	height: 70px;
+	margin-top: 8px;
+	background-color: blue;
+}
+
+#restart
+{
+	display: block;
+	margin: 0 auto;
+	margin-top: 70px;
+	background-color: black;
+	color: #fff;
+	font-size: 20px;
+	width: 180px;
+	height: 60px;
+}
+
+
+.animateIcon {
+	content: url(../images/man-dance.svg);
+    animation: iconAnimate 3s ease-in infinite;
+}
+
+
+#dropArea {
+	height: 500px;
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #c5c5c5;
+	border: 5px solid #5c5c5c;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: iconAnimate 15s ease infinite;
+	-moz-animation: iconAnimate 15s ease infinite;
+	animation: iconAnimate 15s ease infinite;
+}
+
+(@-webkit-keyframes iconAnimate {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
