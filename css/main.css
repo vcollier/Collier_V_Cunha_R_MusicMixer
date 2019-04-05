@@ -121,7 +121,7 @@ h2, h3
 	flex-direction: row;
 	width: 1000px;
 	margin-left: 170px;
-	margin-top: 207px;
+	margin-top: 25px;
 	animation: removeImage;
 }
 
@@ -156,6 +156,41 @@ h2, h3
 	margin-bottom: -200px;
 
 } 
+
+
+.speakers
+{
+	padding: 30px;
+}
+
+#speaker1
+{
+	width: 10%;
+	margin-top: -110px;
+	margin-bottom: 50px;
+	animation: speakerOn 1s infinite;
+}
+
+#speaker2
+{
+	width: 10%;
+	display: block;
+	margin-left: auto;
+	margin-top: -210px;
+	animation: speakerOn 1s infinite;
+
+}
+
+@keyframes speakerOn
+{
+	5% { transform: scale(1.4); }
+	25% { transform: scale(2); }
+	50% { transform: scale(1.4); }
+	75% { transform: scale(2); }
+	100% { transform: scale(1.4); }
+
+
+}
 
 
 #items
@@ -197,19 +232,19 @@ h2, h3
 
 #restart
 {
+	display: block;
+	margin: 0 auto;
+	margin-top: 70px;
 	background-color: black;
 	color: #fff;
+	font-size: 20px;
+	width: 180px;
+	height: 60px;
 }
 
-@keyframes iconAnimate {
-    /*0% {transform: rotate(0deg)}
-    25% {transform: rotate(10deg)}
-    75% {transform: rotate(-10deg)}
-    100% {transform: rotate(0deg)}*/
-}
 
 .animateIcon {
-	background: url(../images/man-dance.svg);
+	content: url(../images/man-dance.svg);
     animation: iconAnimate 3s ease-in infinite;
 }
 
@@ -222,12 +257,12 @@ h2, h3
 	border: 5px solid #5c5c5c;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
+	-webkit-animation: iconAnimate 15s ease infinite;
+	-moz-animation: iconAnimate 15s ease infinite;
+	animation: iconAnimate 15s ease infinite;
 }
 
-/*(@-webkit-keyframes Gradient {
+(@-webkit-keyframes iconAnimate {
 	0% {
 		background-position: 0% 50%
 	}
@@ -237,7 +272,7 @@ h2, h3
 	100% {
 		background-position: 0% 50%
 	}
-}*/
+}
 
 
 
