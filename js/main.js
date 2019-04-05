@@ -38,6 +38,8 @@
 
 			let source = e.dataTransfer.getData("text/plain");
 
+			this.firstChild.classList.add('animateIcon', 'speakerOn');
+
 			let newAudioTrack = document.createElement("audio");
 			newAudioTrack.src = `audio/${source}`;
 
@@ -52,9 +54,6 @@
 
 			let button = document.getElementById('restart');
 			button.addEventListener("click", pauseAudio);
-
-			this.firstChild.classList.add('animateIcon');
-			this.firstChild.classList.add('speakerOn');
 
 
 			});
